@@ -73,9 +73,10 @@ cd django-apps
 While inside the django-apps directory, create your virtual environment. Let’s call it env.
 
 `virtualenv env`
+
 Now, activate the virtual environment with the following command:
 
-`env/bin/activate`
+`source env/bin/activate`
 
 You’ll know it’s activated once the prefix is changed to (env), which will look similar to the following depending on what directory you are in:
 
@@ -98,16 +99,16 @@ Output
 
 `git clone https://github.com/ajitJJadhav/note-app.git`
 
+* Change the working directory:
+
+`cd note-app`
+
 * Install the project:
 
 ```
 python manage.py makemigrations
 python manage.py migrate
 ```
-
-* Change the working directory:
-
-`cd note-app`
 
 * Run the project
 
