@@ -50,9 +50,12 @@ Once it is installed, run a version check to verify that the installation has co
 virtualenv --version
 We should see the following output, or something similar:
 
-`Output`
-`15.1.0`
-You have successfully installed virtualenv.`
+```
+Output
+15.1.0
+```
+
+You have successfully installed virtualenv.
 
 
 ### Step 3 — Install Django
@@ -63,14 +66,17 @@ This is ideal for when we need the version of Django to be isolated from the glo
 
 While in the server’s home directory, we have to create the directory that will contain our Django application. Run the following command to create a directory called django-apps, or another name of your choice. Then navigate to the directory.
 
+```
 mkdir django-apps
-cd django-apps 
+cd django-apps
+``` 
 While inside the django-apps directory, create your virtual environment. Let’s call it env.
 
-virtualenv env
+`virtualenv env`
 Now, activate the virtual environment with the following command:
 
-. env/bin/activate
+`env/bin/activate`
+
 You’ll know it’s activated once the prefix is changed to (env), which will look similar to the following depending on what directory you are in:
 
 `(env) ajit@ubuntu:$`
@@ -81,8 +87,10 @@ Once installed, verify your Django installation by running a version check:
 
 This, or something similar, will be the resulting output:
 
-`Output`
-`2.0.1`
+```
+Output
+2.0.1
+```
 
 ### Step 4 — Installing the project
 
@@ -92,16 +100,22 @@ This, or something similar, will be the resulting output:
 
 * Install the project:
 
-`python manage.py makemigrations`
-`python manage.py migrate`
+```
+python manage.py makemigrations
+python manage.py migrate
+```
+
+* Change the working directory:
+
+`cd note-app`
 
 * Run the project
 
 `python manage.py runserver`
 
-The app will be accessible using the address `127.0.0.1:8000` which can be accessed using any browser.
+The app will be accessible using the address `http://127.0.0.1:8000/` which can be accessed using any browser.
 
 ## Sample
 
-<img src="sample_image.PNG" width="400">
+<img src="sample_image.png" width="400">
 
